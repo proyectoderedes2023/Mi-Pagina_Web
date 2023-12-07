@@ -1,0 +1,77 @@
+.center{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datatable{
+    overflow: hidden;
+    width: fit-content;
+    border-radius: 0.5rem;
+    border: 3px solid white;
+    background-color: #a076f9;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+.datatable table{
+    border-right: hidden;
+    border-left: hidden;
+    border-top: hidden;
+    border-bottom: hidden;
+    border-collapse: collapse;
+}
+.datatable table th{
+    background-color: #6528f7;
+
+}
+.datatable table th
+.datatable table td{
+    border: 3px solid white;
+    padding: 16px 32px;
+}
+
+
+
+
+input[type="submit"] {
+    padding: 10px 20px;
+    
+   
+  background-color: #2f0e5a; /* Color de fondo del botón */
+    
+   
+  color: white; /* Color del texto del botón */
+    
+   
+  border: none; /* Sin bordes */
+    border-radius: 4px; /* Bordes redondeados */
+    
+   
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón sobre el botón */
+  }
+  
+  /* Estilos al pasar el ratón sobre el botón */
+  input[type="submit"]:hover {
+    
+   
+  background-color: #45a049; /* Color de fondo al pasar el ratón */
+  }
+  
+  /* Estilos al presionar el botón */
+  input[type="submit"]:active {
+    
+   
+  background-color: #3e8e41; /* Color de fondo al presionar el botón */
+  }
+  
+  /* Estilos al enfocar el botón (al hacer click o navegar con el teclado) */
+  input[type="submit"]:focus {
+    
+   
+  outline: none; /* Eliminar el contorno al enfocar el botón */
+    
+   
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra al enfocar el botón */
+  }

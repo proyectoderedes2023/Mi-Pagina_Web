@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <?php
+echo "$servername = "localhost"";
+$username = "root";
+$password = "";
+$dbname = "renta_de_autos";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+$sql = "SELECT id_ciudad, region, estado, pais FROM ciudad WHERE id_ciudad >=1";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+  ?>
+  <Html>
+  <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>Inicio</li>
+          <li>Altas</li>
+          <li>Bajas</li>
+        </ul>
+      </nav>
+    </div>
+    <br>
+</br>
+<div class="sidebar">
+      
+<button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    
+   
+<ul class="menu">
+     
+<li><a href="conuslta1.php">Ciudad</a></li>
+<li><a href="conuslta2.php">Cliente</a></li>
+<li><a href="conuslta3.php">Servicios</a></li>
+ <li><a href="conuslta4.php">Consulta</a></li>
+ <li><a href="conuslta5.php">Contactos</a></li>
+<li><a href="conuslta6.php">Empleado</a></li>
+<li><a href="conuslta7.php">Proovedor</a></li>
+ <li><a href="conuslta8.php">Servicio</a></li>
+ <li><a href="conuslta9.php">Sucursal</a></li>
+<li><a href="conuslta10.php">Tarifa</a></li>
+<li><a href="conuslta11.php">Ubicacion</a></li>
+ <li><a href="conuslta12.php">Usuario</a></li>
+    </ul>
+  </div>
+
+    <div class="table-container">
+      <div class="tools">
+          <i class="material-icons"><img src="agregar.png" width="40" height="40"></i>
+        </button>
+      </div>
+  <table border="1">
+<tr>
+<th>Id</th>
+<th>Region</th>
+<th>Estado</th>
+<th>Pais</th>
+<th>Eliminar</th>
+<th>Modificar</th>
+
+</tr>
+<h1<?php
+  while($row = mysqli_fetch_assoc($result)) {
+    echo"<tr>";
+    echo "<td>" . $row["id_ciudad"]."</td>". "<td>" . $row["region"]."</td>"."<td>". $row["estado"]."</td>"."<td>" . $row["pais"]."</td>"."<td>"."<img src=basura.png widt=38 height=38>"."</img>"."</td>"."<td>"."<img src=mod.png widt=38 height=38>"."</img>"."</td>"."<br>";
+  }>
+  </table>";
+  </div>";
+  </body>";
+  
+ <h
+} else {
+  echo "0 results";
+}
+
+mysqli_close($conn);
+?>
+</h1>
+</body>
+</html>

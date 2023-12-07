@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="compra.css">
+</head>
+<body>
+    <nav>
+        <ul>
+        <li>
+           <a href="logo.avif" class="logo">
+          <img src="#" alt="">
+          <span class="nav-itrm">Regresar atras</span>
+           </a> 
+           <li><a href="deportivos.html">
+            <i class="fas fa-home"></i>
+            <span class="nav-item">Regresar</span>
+            </a></li>
+            </li>
+           </ul> 
+    </nav>
+<form id="forml" name="forml" method="POST" action="compra1.php">
+  <div class="contenedor h2">
+    <form class="formulario">
+        <h2>Formulario de Alquiler</h2> 
+  <br><br>
+  <div class="formulario h2">  
+    <div class="formulario h2">
+      <label for="tipo_compra">Tipo de carro, (familiar,deportivo, de lujo):</label>
+      <br>
+      <input type="text"  name="tipo_compra" required>
+    </div>
+    <br>
+    <div class="formulario h2">
+      <label for="modelo_carro">Modelo del carro :</label>
+      <br>
+      <input type="varchar"  name="modelo_carro" required>
+    </div>
+    <br>
+    <div class="formulario h2">
+      <label for="tipo_pago">Método de pago:</label>
+      <br>
+      <input type="varchar"name="tipo_pago" required>
+    </div>
+    <div class="formulario h2">
+      <br>
+      <label for="monto">Monto:</label>
+      <br>
+      <input type="varchar"name="monto" required>
+    </div>
+      <br>
+      <br>
+  </div>
+  <div class ="formulario">
+  <button type="submit">Alquilar</button>
+  </div>
+  </form>
+</body>
+</html>

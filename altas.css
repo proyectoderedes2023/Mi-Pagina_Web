@@ -1,0 +1,134 @@
+  
+  body{
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  justify-content: center;
+    align-items: center;
+  height: 100vh;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  
+  }
+  
+  nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #cd9beb;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+  .logo{
+    text-align: center;
+    display: flex;
+    transition: all 10s ease;
+    margin: 10px 0 0 10px;
+  }
+  .log img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  .logo span{
+    font-weight:  bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  a{
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+  }
+  .fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+  }
+  a:hover{
+    background: white;
+    border-radius: 10%;
+  }
+  nav:hover{
+    width: 280px;
+    transition: all 0.5s ease;
+  }
+  .logut{
+    position: absolute;
+    bottom: 0;
+  
+  }
+  .contenedor {
+    background-color: #8e85cf;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(218, 8, 8, 0.1);
+    padding: 20px;
+    width: 400px;
+  }
+  
+  /* Estilos del formulario */
+  .formulario h2 {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 18px;
+    border-radius: none;
+  }
+  .formulario .campo {
+    margin-bottom: 20px;
+  }
+  
+  .formulario label {
+    display: block;
+  font-weight: bold;
+  }
+  
+  .formulario input,
+  .formulario textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+   
+    border-radius: 0px;
+  }
+  .formulario button {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    
+
+  background-color: #5e2f2f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .formulario button:hover {
+    background-color: transparent;
+  }
